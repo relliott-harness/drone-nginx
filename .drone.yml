@@ -1,6 +1,5 @@
 kind: pipeline
 name: default
-
 steps:
 - name: build
   image: python
@@ -16,5 +15,3 @@ steps:
     group_id: com.harnesstx 
     artifact_id: awesome-lib
     version: 1.0-SNAPSHOT
-    files:
-      - target/drone-docker
