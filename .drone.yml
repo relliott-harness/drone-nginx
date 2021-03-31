@@ -10,5 +10,5 @@ steps:
   settings:
     username: robin.elliott@harness.io
     password: Blqrq9SCsr1Pv0uS
-    repo: harnesstx.jfrog.io/demo-apps
+    repo: demo-apps
     registry: harnesstx.jfrog.io
