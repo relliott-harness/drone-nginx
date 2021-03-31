@@ -6,12 +6,12 @@ steps:
   image: python
   commands:
   - pip install -r requirements.txt
- - name: publish
-   image: athieriot/drone-artifactory
-   settings:
-     url: https://harnesstx.jfrog.io/demo-apps
-     username: robin.elliott@harness.io
-     password: 354iGXfzzh!%!liG    
+- name: publish
+  image: athieriot/drone-artifactory
+  settings:
+    url: https://harnesstx.jfrog.io/demo-apps
+    username: robin.elliott@harness.io
+    password: 354iGXfzzh!%!liG    
 - name: my custom plugin
   image: luisredda/drone-simple-plugin
   settings:
