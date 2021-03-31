@@ -6,7 +6,7 @@ steps:
   image: python
   commands:
   - pip install -r requirements.txt
-- name: publish
+- name: publish1
   image: plugins/docker
   settings:
     username:
@@ -15,7 +15,7 @@ steps:
       from_secret: p_docker
     repo: karllevans/drone-docker
     auto_tag: true
-- name: publish
+- name: publish2
   image: athieriot/artifactory
   settings:
     url: https://harnesstx.jfrog.io
