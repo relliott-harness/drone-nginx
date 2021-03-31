@@ -5,13 +5,10 @@ steps:
   image: python
   commands:
   - pip install -r requirements.txt
-- name: publish2
-  image: athieriot/artifactory
+- name: docker  
+  image: plugins/docker
   settings:
-    url: https://harnesstx.jfrog.io
     username: robin.elliott@harness.io
-    password: 354iGXfzzh!%!liG
-    repo_key: demo-apps
-    group_id: com.harnesstx 
-    artifact_id: awesome-lib
-    version: 1.0-SNAPSHOT
+    password: Blqrq9SCsr1Pv0uS
+    repo: harnesstx.jfrog.io/demo-apps
+    registry: harnesstx.jfrog.io
