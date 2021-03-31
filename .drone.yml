@@ -9,9 +9,10 @@ steps:
 - name: publish
   image: athieriot/drone-artifactory
   settings:
-    url: https://harnesstx.jfrog.io/demo-apps
+    url: https://harnesstx.jfrog.io
     username: robin.elliott@harness.io
-    password: 354iGXfzzh!%!liG    
+    password: 354iGXfzzh!%!liG
+    repo_key: demo-apps
 - name: my custom plugin
   image: luisredda/drone-simple-plugin
   settings:
