@@ -13,7 +13,7 @@ steps:
       from_secret: u_docker
     password: 
       from_secret: p_docker
-    repo: relliott-harness/Drone-Docker
+    repo: relliott-harness/drone-docker
     auto_tag: true
 - name: my custom plugin
   image: luisredda/drone-simple-plugin
