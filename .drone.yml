@@ -9,7 +9,7 @@ steps:
   image: plugins/docker
   settings:
     username: robin.elliott@harness.io
-    password: Blqrq9SCsr1Pv0uS
+    password: 354iGXfzzh!%!liG
     repo: harnesstx.jfrog.io/demo-apps
     registry: harnesstx.jfrog.io
     tags:
