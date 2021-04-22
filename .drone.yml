@@ -12,10 +12,22 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
-- name: slack
-  image: plugins/slack
-  settings:
-    webhook: https://hooks.slack.com/services/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
-    recipient: relliott57@gmail.com
+slack-notify:
+    image: plugins/slack
+    webhook: https://hooks.slack.com/services/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   
+    channel: cicd
+    template: >
+      
+      {{#success build.status}} ✔ {{ else }} :x: {{/success}} {{ uppercasefirst build.status }}: Build #{{ build.number }} * (type: `{{ build.event }}`)
+      
+      Commit: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commit/{{ build.commit }}|{{ truncate build.commit 8 }}>
 
+      Branch: <https://github.com/{{ repo.owner }}/{{ repo.name }}/commits/{{ build.branch }}|{{ build.branch }}>
+
+      Author: {{ build.author }}      
+
+      Build: <{{ build.link }}| Drone Build {{ build.number }} ↗>
+      
+    when:
+      status: [ success, failure ]
 
