@@ -12,9 +12,9 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.1
-- name: slack
-  image: plugins/slack
-  settings:
-    webhook: https://hooks.slack.com/services/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
-    channel: cicd
+#- name: slack
+#  image: plugins/slack
+#  settings:
+#    webhook: https://hooks.slack.com/services/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
+#    channel: cicd
 
