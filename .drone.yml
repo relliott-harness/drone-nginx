@@ -12,7 +12,7 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
-slack-notify:
+- name: slack-notify
     image: plugins/slack
     webhook: https://hooks.slack.com/services/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   
     channel: cicd
