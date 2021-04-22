@@ -9,6 +9,6 @@ steps:
     repo: harnesstx.jfrog.io/demo-apps/drone-nginx
     registry: harnesstx.jfrog.io
     tags:
-      - latest
+      - v1.0
 image_pull_secrets:
 - docker-harnesstx-docker-io
