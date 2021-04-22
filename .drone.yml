@@ -10,6 +10,10 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
+image_pull_secrets:
+
+steps:
+- docker-harnesstx-docker-io
 - name: slack
   image: plugins/slack
   settings:
@@ -21,6 +25,5 @@ steps:
       {{else}}
         build {{build.number}} failed. Fix me please.
       {{/success}}
-image_pull_secrets:
-- docker-harnesstx-docker-io
+
 
