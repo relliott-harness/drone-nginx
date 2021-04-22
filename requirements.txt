@@ -1,4 +1,0 @@
-pytest
-flask
-boto3
-waitress
