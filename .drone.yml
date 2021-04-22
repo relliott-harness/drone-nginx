@@ -12,17 +12,9 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
-      
-
-- name: slack-notify
+- name: slack
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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   
-    channel: cicd
-    template: >      
-      {{#success build.status}}
-      hey all! build {{build.number}} was successful.  Good Job.
-      {{ else }}
-      hey all! build {{build.number}} failed.  Fix me please.
-      {{/success}} 
+    webhook: https://hooks.slack.com/services/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
+    icon_url: https://unsplash.it/256/256/?random
 
