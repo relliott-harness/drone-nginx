@@ -11,10 +11,10 @@ steps:
     repo: harnesstx.jfrog.io/demo-apps/drone-nginx
     registry: harnesstx.jfrog.io
     tags:
-      - v1.0
-name: slack
+      - v1.1
+- name: slack
   image: plugins/slack
-  webhook: https://hooks.slack.com/services/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
-  chennel: cicd
-  icon_url: https://unsplash.it/256/256/?random
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: cicd
 
