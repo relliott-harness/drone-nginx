@@ -16,6 +16,6 @@ steps:
   image: plugins/slack
   settings:
     webhook: https://hooks.slack.com/services/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
-    channel: cicd
+    recipient: relliott57@gmail.com
 
 
