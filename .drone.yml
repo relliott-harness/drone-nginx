@@ -10,7 +10,7 @@ steps:
   settings:
     username: robin.elliott@harness.io
     password: 354iGXfzzh!%!liG
-    repo: harnesstx.jfrog.io/demo-apps/python
+    repo: harnesstx.jfrog.io/demo-apps/waitress
     registry: harnesstx.jfrog.io
     tags:
       - latest
