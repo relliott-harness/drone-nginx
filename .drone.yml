@@ -12,5 +12,5 @@ steps:
     repo: harnesstx.jfrog.io/demo-apps/drone-nginx
     registry: harnesstx.jfrog.io
     tags:
-      - v1.1
+      - v1.2
 
