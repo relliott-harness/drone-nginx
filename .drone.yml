@@ -17,4 +17,5 @@ steps:
   settings:
     webhook: https://hooks.slack.com/services/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
     icon_url: https://unsplash.it/256/256/?random
+    username: "Robin Elliott"
 
