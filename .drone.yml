@@ -11,9 +11,10 @@ steps:
     tags:
       - v1.0
 image_pull_secrets:
+- docker-harnesstx-docker-io
+
 
 steps:
-- docker-harnesstx-docker-io
 - name: slack
   image: plugins/slack
   settings:
