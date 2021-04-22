@@ -15,6 +15,6 @@ steps:
 - name: slack
   image: plugins/slack
   settings:
-    webhook: https://hooks.slack.com/services/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
+    webhook: https://hooks.slack.com/services/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
     icon_url: https://unsplash.it/256/256/?random
 
