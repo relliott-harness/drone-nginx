@@ -10,5 +10,17 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
+- name: slack
+  image: plugins/slack
+  settings:
+    webhook: https://hooks.slack.com/services/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
+    channel: cicd
+    template: >
+      {{#success build.status}}
+        build {{build.number}} succeeded. Good job.
+      {{else}}
+        build {{build.number}} failed. Fix me please.
+      {{/success}}
 image_pull_secrets:
 - docker-harnesstx-docker-io
+
