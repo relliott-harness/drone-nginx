@@ -1,5 +1,7 @@
 kind: pipeline
 name: default
+image_pull_secrets:
+- docker-harnesstx-docker-io
 steps:
 - name: docker  
   image: plugins/docker
@@ -10,11 +12,6 @@ steps:
     registry: harnesstx.jfrog.io
     tags:
       - v1.0
-image_pull_secrets:
-- docker-harnesstx-docker-io
-
-
-steps:
 - name: slack
   image: plugins/slack
   settings:
