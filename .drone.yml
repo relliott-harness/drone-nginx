@@ -5,6 +5,7 @@ image_pull_secrets:
 steps:
 - name: docker  
   image: plugins/docker
+  pull: if-not-exists
   settings:
     username: robin.elliott@harness.io
     password: 354iGXfzzh!%!liG
