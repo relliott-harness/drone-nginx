@@ -1,16 +1,12 @@
 kind: pipeline
 name: default
 steps:
-- name: build
-  image: python
-  commands:
-  - pip install -r requirements.txt
 - name: docker  
   image: plugins/docker
   settings:
     username: robin.elliott@harness.io
     password: 354iGXfzzh!%!liG
-    repo: harnesstx.jfrog.io/demo-apps/waitress
+    repo: harnesstx.jfrog.io/demo-apps/nginx
     registry: harnesstx.jfrog.io
     tags:
       - latest
