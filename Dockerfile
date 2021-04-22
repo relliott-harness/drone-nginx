@@ -5,5 +5,5 @@ WORKDIR /app
 LABEL jira=HAR-3
 
 EXPOSE 5000
-ENTRYPOINT ["waitress-server"]
+ENTRYPOINT ["waitress-serve"]
 CMD ["--port=5000", "app:app"]
