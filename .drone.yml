@@ -17,11 +17,5 @@ steps:
   settings:
     webhook: https://hooks.slack.com/services/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
     channel: cicd
-    template: >
-      {{#success build.status}}
-        build {{build.number}} succeeded. Good job.
-      {{else}}
-        build {{build.number}} failed. Fix me please.
-      {{/success}}
 
 
